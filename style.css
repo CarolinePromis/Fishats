@@ -1,0 +1,430 @@
+@import url('https://fonts.cdnfonts.com/css/fishes-friends');
+
+/* taille téléphone */
+@media screen and (max-width: 500px) {
+
+    main .gentleman,
+    main .fou,
+    main .casquette,
+    main .genial .confettis {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header #menu {
+        margin-top: 5vh;
+        margin-right: 7vh;
+        cursor: pointer;
+    }
+
+    header #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header #menu ul {
+        position: absolute;
+        z-index: 1;
+        display: none;
+        background-color: #007994;
+        border-radius: 15px;
+        padding: 5px;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+
+    header #menu:hover ul {
+        display: block;
+    }
+
+    main {
+        padding-left: 3vh;
+        padding-right: 3vh;
+        text-align: center;
+    }
+
+    main .ecologique #ecologie {
+        width: 50vw;
+        height: 50vw;
+        padding: 2vh;
+    }
+
+    main .fete {
+        position: absolute;
+        transform: rotate(-20deg);
+        height: 100px;
+        filter: opacity(85%);
+        top: 4%;
+        left: 3%;
+    }
+
+    main .plage {
+        position: absolute;
+        transform: rotate(20deg);
+        height: 150px;
+        filter: opacity(85%);
+        top: 92%;
+        right: 1%;
+    }
+
+    main .genial {
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+
+    main #carte {
+        width: 100%;
+    }
+
+    main #mortalite {
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(8, 28, 58, 0.5);
+    }
+}
+
+/* taille ordinateur */
+@media screen and (min-width: 500px) {
+
+    header #titre_Menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1vh;
+    }
+
+    header #menu ul li {
+        display: inline;
+    }
+
+    main {
+        padding-left: 10vh;
+        padding-right: 10vh;
+        text-align: center;
+    }
+
+    main .casquette {
+        position: absolute;
+        transform: rotate(-20deg);
+        height: 100px;
+        filter: opacity(85%);
+        bottom: 3%;
+        left: 6%;
+    }
+
+    main .fete {
+        position: absolute;
+        transform: rotate(-20deg);
+        height: 100px;
+        filter: opacity(85%);
+        top: 8%;
+        left: 10%;
+    }
+
+    main .gentleman {
+        position: absolute;
+        transform: rotate(30deg);
+        width: 170px;
+        filter: opacity(85%);
+        top: 23%;
+        right: 2%;
+    }
+
+    main .plage {
+        position: absolute;
+        transform: rotate(15deg);
+        height: 150px;
+        filter: opacity(85%);
+        bottom: 1%;
+        right: 5%;
+    }
+
+    main .fou {
+        position: absolute;
+        transform: rotate(-15deg);
+        height: 100px;
+        filter: opacity(85%);
+        top: 43%;
+        left: 1%;
+    }
+
+    main .ecologique {
+        display: flex;
+        align-items: center;
+    }
+
+    main .ecologique #ecologie {
+        width: 20vw;
+        height: 20vw;
+        padding: 2vh;
+    }
+
+    main form .infos_persos {
+        columns: 2;
+        column-gap: 50px;
+    }
+
+    main .provenance {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    main #carte {
+        width: 30vw;
+    }
+
+    main #mortalite {
+        width: 55vw;
+    }
+
+    main .acheter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        background-color: rgba(8, 28, 58, 0.5);
+    }
+
+    footer .contact {
+        padding-left: 10vh;
+        flex-basis: 70%;
+    }
+
+    footer .liens {
+        padding-right: 10vh;
+        flex-basis: 30%;
+    }
+}
+
+*,
+*:visited {
+    text-decoration: none;
+    background: transparent;
+    font-family: 'Fishes Friends', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    padding: 2px;
+    margin: 0px;
+    transition-duration: 0.3s;
+    line-height: 45px;
+}
+
+body {
+    background: linear-gradient(#2ebbdb, #05203D);
+}
+
+h1 {
+    padding-left: 0;
+    padding-top: 4vh;
+    padding-bottom: 7vh;
+    font-size: 60px;
+}
+
+h2 {
+    padding-bottom: 5vh;
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 20px;
+    padding-bottom: 3vh;
+}
+
+h6 {
+    font-size: 13px;
+}
+
+p,
+a {
+    font-size: 20px;
+}
+
+header .logo {
+    width: 80px;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+header #menu ul li {
+    list-style-type: none;
+}
+
+header nav a:hover,
+header nav p:hover {
+    color: rgb(14, 40, 153);
+}
+
+main {
+    position: relative;
+    margin-bottom: 10vh;
+}
+
+main div .bouton {
+    background-color: rgba(136, 207, 255, 0.5);
+    padding: 1em;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+main div .bouton:hover {
+    background-color: rgba(0, 153, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 25px rgb(222, 222, 222, 0.5);
+}
+
+main .poisson {
+    height: 200px;
+}
+
+main #requin {
+    transform: rotate(-10deg);
+    height: 200px;
+}
+
+main .genial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main .genial .confettis {
+    visibility: hidden;
+    height: 150px;
+}
+
+main .genial:hover .confettis {
+    visibility: visible;
+}
+
+main .partenaires ul {
+    list-style-type: none;
+}
+
+main .partenaires ul li a:hover,
+footer .liens a:hover {
+    color: rgb(116, 141, 255);
+}
+
+main #mortalite {
+    border-radius: 15px;
+    box-shadow: 0px 0px 40px rgb(112, 210, 255);
+}
+
+main form {
+    text-align: center;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+}
+
+main form .infos_persos label input {
+    width: 70%;
+}
+
+main form .infos_persos label input,
+textarea {
+    font-size: 15px;
+}
+
+main form .infos_persos label,
+form label {
+    font-size: 20px;
+}
+
+main form .infos_persos label input:invalid,
+main form textarea:invalid {
+    border: 3px solid rgb(214, 43, 43);
+    border-radius: 10px;
+}
+
+main form .infos_persos label input:valid,
+main form textarea:valid {
+    border: 3px solid rgb(0, 194, 0);
+    border-radius: 10px;
+}
+
+main form textarea {
+    height: 30vh;
+    width: 80%;
+    resize: none;
+}
+
+main input[type="submit"] {
+    background-color: rgba(136, 207, 255, 0.5);
+    border: none;
+    font-size: 20px;
+    padding: 0.4em;
+    border-radius: 15px;
+}
+
+main input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgba(0, 153, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 25px rgb(222, 222, 222, 0.5);
+}
+
+main #mentions_legales {
+    text-align: left;
+}
+
+footer {
+    padding: 3vh;
+}
+
+footer .liens a:hover {
+    color: rgb(116, 141, 255);
+}
+
+footer .contact h3,
+h6,
+a {
+    line-height: 20px;
+}
+
+footer .contact h6 #mail:hover {
+    color: rgb(116, 141, 255);
+}
+
+footer .contact h6 #mail {
+    font-size: 13px;
+}
+
+footer .liens a {
+    font-size: 20px;
+    font-weight: bold; 
+}
+
+footer .liens {
+    line-height: 35px;
+}
